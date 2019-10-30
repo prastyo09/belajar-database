@@ -8,8 +8,11 @@
     <title>Si Mamat</title>
 </head>
 <body>
+    <!-- untuk judul di websitenya -->
     <p>DATA KARYAWAN</p>
     <br>
+
+    <!-- tabel untuk melihat daftar karyawan -->
     <table width="627" border="1">
         <body>
             <tr>
@@ -18,6 +21,8 @@
                 <td>Alamat</td>
                 <td>Jabatan</td>
             </tr>
+
+            <!-- script untuk meng-query databasenya -->
             <?php
             include"koneksi.php";
             $kayawan=mysqli_query($koneksi,"SELECT * FROM tbkaryawan");
